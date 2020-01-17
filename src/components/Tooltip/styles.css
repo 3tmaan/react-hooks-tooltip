@@ -1,0 +1,105 @@
+:root {
+    --grey: #212529;
+    --border: 10px solid;
+}
+
+.container {
+    position: relative;
+    display: inline-flex;
+    user-select: none;
+    cursor: pointer;
+    margin: 0 10px;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.tooltipContent {
+    color: #ffffff;
+    position: absolute;
+    z-index: 10;
+    padding: 12px;
+    font-size: 12px;
+    cursor: default;
+    border-radius: 3px;
+    white-space: nowrap;
+    font-family: monospace;
+    background-color: var(--grey);
+    box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.16);
+    animation: fadeIn ease-in-out 0.65s;
+
+    &.sm {
+        max-width: 23rem;
+    }
+
+    &.md {
+        max-width: 40rem;
+    }
+}
+
+.arrow {
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+
+.top {
+    bottom: calc(100% + 18px);
+    left: 50%;
+    transform: translateX(-50%);
+
+    .arrow {
+        bottom: -8px;
+        left: calc(50% - 10px);
+        border-right: var(--border) transparent;
+        border-top: var(--border) var(--grey);
+        border-left: var(--border) transparent;
+    }
+}
+
+.right,
+.left {
+    top: 50%;
+    transform: translateY(-50%);
+
+    .arrow {
+        top: calc(50% - 10px);
+        border-top: var(--border) transparent;
+        border-bottom: var(--border) transparent;
+    }
+}
+
+.right {
+    left: calc(100% + 18px);
+
+    .arrow {
+        left: -8px;
+        border-right: var(--border) var(--grey);
+    }
+}
+
+.left {
+    right: calc(100% + 18px);
+
+    .arrow {
+        right: -8px;
+        border-left: var(--border) var(--grey);
+    }
+}
+
+.bottom {
+    top: calc(100% + 18px);
+    left: 50%;
+    transform: translateX(-50%);
+
+    .arrow {
+        top: -8px;
+        left: calc(50% - 10px);
+        border-right: var(--border) transparent;
+        border-bottom: var(--border) var(--grey);
+        border-left: var(--border) transparent;
+    }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}

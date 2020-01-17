@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    margin: 40px auto;
+    width: 600px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 40px;
+}
+
+button {
+    padding: 12px;
+}
