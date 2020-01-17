@@ -1,0 +1,25 @@
+{
+  "name": "react-tooltip",
+  "version": "1.0.0",
+  "description": "A React Tooltip using Hooks",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel ./src/index.html --open"
+  },
+  "repository": "https://github.com/3tmaan/react-tooltip",
+  "author": "Othmane Abisourour <abisourour.othmane@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "@babel/preset-react": "^7.8.3",
+    "parcel-bundler": "^1.12.4",
+    "postcss-modules": "^1.5.0",
+    "postcss-nested": "^4.2.1"
+  }
+}
