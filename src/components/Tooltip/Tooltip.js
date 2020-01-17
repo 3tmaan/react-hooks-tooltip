@@ -7,13 +7,11 @@ import Styles from './styles.css';
 
 const propTypes = {
     position: PropTypes.string,
-    size: PropTypes.string,
     children: PropTypes.node.isRequired,
 };
 
 const Tooltip = ({ title, position, children }) => {
     const node = useRef();
-    //const [placeholder] = children;
     const [isVisible, setState] = useState(false);
     const handleClick = ({ target }) => {
         if (node.current.contains(target)) {
