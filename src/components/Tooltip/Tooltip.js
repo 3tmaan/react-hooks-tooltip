@@ -6,6 +6,7 @@ import cx from 'classnames';
 import Styles from './styles.css';
 
 const propTypes = {
+    title: PropTypes.string.isRequired,
     position: PropTypes.string,
     children: PropTypes.node.isRequired,
 };
