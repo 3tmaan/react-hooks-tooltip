@@ -23,5 +23,10 @@
     "parcel-bundler": "^1.12.4",
     "postcss-modules": "^1.5.0",
     "postcss-nested": "^4.2.1"
+  },
+  "resolutions": {
+    "**/**/kind-of": "^6.0.3",
+    "**/**/acorn": "^6.4.1",
+    "**/**/minimist": "1.2.3"
   }
 }
