@@ -1,0 +1,8 @@
+.container {
+    position: relative;
+    display: inline-flex;
+    user-select: none;
+    cursor: pointer;
+    margin: 0 10px;
+    -webkit-tap-highlight-color: transparent;
+}

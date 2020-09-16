@@ -2,9 +2,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 // Internals
-import App from './components/App';
-// Theming & Styling
-import './main.css';
+import App from './App';
 
 /* ==========================================================================
    Client side rendering
